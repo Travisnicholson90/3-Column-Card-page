@@ -45,6 +45,16 @@ body{
     }
 }
 
+@media only screen and (max-width: 50em){
+    .flex-container{
+        grid-template-columns: 1fr;
+        width: 20.438rem;
+        height: 27.625rem;
+    }
+}
+
+
+
 h1{
     background-color: inherit;
     color: var(--Very-light-gray);
