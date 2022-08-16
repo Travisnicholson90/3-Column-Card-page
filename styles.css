@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Outfit&display=swap');
+
+
+
+:root{
+    
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+    --Font-size: 15px;
+    --Font-weight: 400;
+    --Font-weight: 700;
+}  
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F2F2;
+    height: 100%;
+    
+}
+
+.flex-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    width: 57.5rem;
+    height: 31.25rem;
+    margin: 0 auto;
+    margin-top: 10%;
+    border-radius: 0.5rem;    
+
+}
+
+@media only screen and (max-width: 24em){
+    .flex-container{
+        grid-template-columns: 1fr;
+        width: 20.438rem;
+        height: 27.625rem;
+    }
+}
+
+h1{
+    background-color: inherit;
+    color: var(--Very-light-gray);
+    font-family: Big Shoulders Display;
+    font-size: 2.5rem;
+    line-height: 2.993rem;
+    margin-top: 2.188rem;
+    margin-left: 3rem;
+}
+
+p{
+    background-color: inherit;
+    color: var(--Transparent-white);
+    font-family: Lexend Deca;
+    font-size: 0.938rem;
+    line-height: 1.563rem;
+    opacity: 75%;
+    margin-top: 1.563rem;
+    margin-left: 2.969rem;
+    margin-right: 2.969rem;    
+}
+
+.button{
+    font-family: Lexend Deca;
+    font-size: 0.938rem;
+    line-height: 1.563rem;
+    width: 9.125rem;
+    height: 3rem;
+    border-radius: 1.563rem;
+    color: inherit;
+    background-color: var(--Very-light-gray);
+    border: none;
+    margin-top: 5.188rem;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+.button:hover{
+    background-color: inherit;
+    border: solid 3px var(--Transparent-white);
+    color: var(--Transparent-white);
+    cursor: pointer;
+}   
+
+
+.img-sedans{
+    background-color: inherit;
+    width: 4rem;
+    height: 2.5rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.img-suvs{
+    background-color: inherit;
+    width: 4rem;
+    height: 2.5rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.img-luxury{
+    background-color: inherit;
+    width: 4rem;
+    height: 2.5rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+
+.column-1{
+    background-color: var(--Bright-orange);
+    border-radius: 0.5rem;    
+}
+
+.column-2{
+    background-color: var(--Dark-cyan);
+    border-radius: 0.5rem;
+}
+
+.column-3{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0.5rem;
+}
