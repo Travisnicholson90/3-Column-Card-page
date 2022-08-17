@@ -40,20 +40,45 @@ body{
 @media only screen and (max-width: 24em){
     .flex-container{
         grid-template-columns: 1fr;
-        width: 20.438rem;
-        height: 27.625rem;
+        max-width: 20.438rem;
+        max-height: 27.625rem;
     }
+
+
 }
 
-@media only screen and (max-width: 50em){
+@media only screen and (max-width: 955px){
     .flex-container{
         grid-template-columns: 1fr;
-        width: 20.438rem;
-        height: 27.625rem;
+        max-width: 20.438rem;
+        max-height: 27.625rem;
+    }
+
+    .column-1{
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        
+        
+    }
+
+    .column-3{
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        
     }
 }
 
+@media only screen and (min-width: 956px){
+    .column-1{
+        border-bottom-left-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
+    }
 
+    .column-3{
+        border-bottom-right-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+}
 
 h1{
     background-color: inherit;
@@ -87,9 +112,10 @@ p{
     color: inherit;
     background-color: var(--Very-light-gray);
     border: none;
-    margin-top: 5.188rem;
+    margin-top: 4.8rem;
     margin-left: 3rem;
     margin-bottom: 3rem;
+    
 }
 
 .button:hover{
@@ -97,6 +123,7 @@ p{
     border: solid 3px var(--Transparent-white);
     color: var(--Transparent-white);
     cursor: pointer;
+    
 }   
 
 
@@ -127,15 +154,14 @@ p{
 
 .column-1{
     background-color: var(--Bright-orange);
-    border-radius: 0.5rem;    
+       
 }
 
 .column-2{
     background-color: var(--Dark-cyan);
-    border-radius: 0.5rem;
+    
 }
 
 .column-3{
     background-color: var(--Very-dark-cyan);
-    border-radius: 0.5rem;
 }
